@@ -1,0 +1,51 @@
+selection = input("Rock,scissors or Paper?")
+selection2 = input("Rock,scissors or Paper?")
+player1 = 0
+player2 = 0
+
+if selection == "Rock":
+    if selection2 == "Rock":
+        print("Equal")
+    elif selection2 == "scissors":
+        print("Player 1 beated")
+        player1 += 1
+    elif selection2 == "Paper":
+        print("Player 2 beated")
+        player2 += 1
+    else:
+        print("Please pick a valid expression")
+elif selection == "Scissors":
+    if selection2 == "Rock":
+        print("Player 2 beated")
+        player2 += 1
+    elif selection2 == "Scissors":
+        print("Equal")
+    elif selection2 == "Paper":
+        print("Player 1 beated")
+        player1 += 1
+    else:
+        print("Please pick a valid expression")
+elif selection == "Paper":
+    if selection2 == "Rock":
+        print("Player 1 beated")
+        player1 += 1
+    elif selection2 == "Scissors":
+        print("Player 2 beated")
+        player2 += 1
+    elif selection2 == "Paper":
+        print("Equal")
+    else:
+        print("Please pick a valid expression")
+else:
+    print("Please pick a valid expression")
+
+print(f"Player 1: {player1} \n Player 2: {player2}")
+
+if player1 > player2:
+    print("Player 1 won!")
+elif player1 < player2:
+    print("Player 2 won")
+else:
+    print("Points are equal")
+
+print("Would you want to play again?")
