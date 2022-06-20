@@ -1,0 +1,15 @@
+import random
+x = int(input("Pick a number for the interval"))
+rd = random.randint(1, x)
+guess = 0
+c = 0
+while guess != rd and guess != "exit":
+    guess = int(input("Pick a number : "))
+
+    c += 1
+    if guess < rd:
+        print("Too low")
+    if guess > rd:
+        print("Too high")
+
+print(f"You found it and it took {c} tries!")
