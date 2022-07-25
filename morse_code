@@ -30,6 +30,6 @@ def convert_to_morse(x):
     return x
 
 
-girdi = input("Write whatever you want :) : ")
+girdi = input("Write whatever you want to convert it morse code : ")
 morse = convert_to_morse(girdi.lower())
 print(morse)
